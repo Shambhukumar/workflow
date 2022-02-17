@@ -1,0 +1,45 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    &-right{
+        display: flex;
+        align-items: center;
+
+    }
+    
+    img{
+        margin-right: 40px;
+        width: 60px;
+        height: auto;
+    }
+    &-list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li{
+            cursor: pointer;
+            font-size: 1.1rem;
+            margin-right: 25px;
+        }
+    }
+    &-btn{
+        display: flex;
+        align-items: center;
+        span{
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: rgba(128, 128, 128, 0.404);
+            padding: 10px 15px;
+        }
+        &-login{
+            
+            background-color: transparent !important;
+            margin-right: 20px;
+            &:hover{
+                background-color: rgba(128, 128, 128, 0.288) !important;
+            }
+        }
+    }
+}

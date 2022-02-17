@@ -1,0 +1,36 @@
+.accordion{
+    margin: 0;
+    border-top: 1px solid gray;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &-img[aria-expanded="false"]{
+        transform: rotateZ(180deg);
+    }
+    &-title{
+        cursor: pointer;
+        font-weight: 600;
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        img{
+            width: 20px;
+        }
+    }
+    
+    &-content{
+    max-height: 100%;
+    overflow: hidden;
+   color: gray;
+    max-height: 1000px;
+    transition: max-height 1s ease-in-out;
+
+    }
+    &-content[aria-expanded="true"]{
+        max-height: 0px;
+        
+        transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+    }
+   
+}
