@@ -2,19 +2,36 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    // min-height: 100vh;
+    @media (min-width: "500px") {
+        height: 100vh;
+      }
     overflow: hidden;
     padding: 20px 30px;
+    @media (max-width: "460px") {
+        // font-size: 3rem;
+        padding: 20px 10px;
+      }
     background-color: #151c2c;
     color: #fefeff;
     &-container{
         display: flex;
         height: 100%;
+        @media (max-width: "460px") {
+            // font-size: 3rem;
+            margin: 50px 0px;
+          }
 
     }
     &-left{
         margin-top: 5%;
         width: 43%;
+        @media (max-width: "1400px") {
+            width: 70%;
+          }
+          @media (max-width: "850px") {
+            width: 100%;
+          }
         &-top{
             margin-bottom: 20px;
             font-size: 0.8rem;
@@ -26,6 +43,9 @@
             padding: 7px 7px;
             justify-content: space-between;
             width: 300px;
+            @media (max-width: "940px") {
+                width: 260px;
+              }
             span{
                 cursor: pointer;
                 padding: 5px 10px;
@@ -40,6 +60,9 @@
             flex-direction: column;
             font-weight: 600;
             font-size: 4rem;
+            @media (max-width: "460px") {
+                font-size: 3rem;
+              }
             margin: 40px 0px ;
             &-2{
       
@@ -68,7 +91,7 @@
             align-items: center;
             // justify-content: space-between;
            input{
-               width: 400px;
+               width: 370px;
                font-size: 1.1rem;
                padding: 10px;
                border-radius: 5px;
@@ -79,7 +102,7 @@
                cursor: pointer;
                border-radius: 5px;
                font-size: 1rem;
-               padding: 12px 10px;
+               padding: 12px 7px;
                margin-left: 10px ;
                background: linear-gradient(to bottom right , #63cfd3, #277e81);
 
@@ -98,9 +121,21 @@
     &-right{
         display: flex;
         justify-content: center;
-        width: 60%;
+        width: 50%;
+        position: relative;
+        @media (max-width: "850px") {
+            display: none;
+          }
         img{
-            width: 80%;
+            position: absolute;
+            width: 70%;
+            bottom: -10%;
+            // @media (max-width: "1300px") {
+            //     width: 70%;
+            //   }
+              @media (max-width: "1000px") {
+                width: 90%;
+              }
         }
     }
 }

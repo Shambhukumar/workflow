@@ -15,6 +15,9 @@
         height: auto;
     }
     &-list{
+        @media (max-width: "800px") {
+            display: none;
+          }
         list-style: none;
         display: flex;
         align-items: center;
@@ -40,6 +43,29 @@
             &:hover{
                 background-color: rgba(128, 128, 128, 0.288) !important;
             }
+            @media (max-width: "800px") {
+                display: none;
+              }
         }
     }
 }
+.mobile-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 27px;
+    cursor: pointer;
+    margin-left: 30px;
+    @media (min-width: "800px") {
+        display: none;
+      }
+    div{
+    width: 40px;
+    background: linear-gradient(to bottom right , #78edf1, #2da4a8);
+
+    height: 5px;
+    // margin-bottom: 5px;
+
+    }
+}
+    

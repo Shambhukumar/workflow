@@ -5,16 +5,42 @@
     height: 340px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: "670px") {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+        // height: 300px;
+    }
     &-image{
        height: 100%;
        position: relative;
        margin-left: 50px;
+       @media (max-width: "880px") {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+    @media (max-width: "670px") {
+       margin-left: 0px;
+    }
+
         img{
             border-radius: 20px;
             position: absolute;
+            
             top: -40px;
+            
             object-fit: cover;
             width: 280px;
+            @media (max-width: "880px") {
+                position: relative;
+                width: 190px;
+                top: 0px;
+            }
+            @media (max-width: "670px") {
+                width: 250px;
+                margin-top: 20px;
+            }
         }
     
     }
@@ -23,21 +49,38 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        
         &-quate{
             font-size: 5rem;
             color: rgba(255, 255, 255, 0.445);
+            @media (max-width: "1150px") {
+                font-size: 4rem;
+            }
         }
         color: white;
         width: 70%;
+        
+        @media (max-width: "1150px") {
+           width: 60%;
+        }
+        @media (max-width: "670px") {
+            width: 90%;
+        }
         &-head{
             margin-bottom: 40px;
             font-size: 2rem;
+            @media (max-width: "1150px") {
+                font-size: 1.5rem;
+            }
         }
 
         &-name{
             display: flex;
             flex-direction: column;
             font-size: 1.5rem;
+            @media (max-width: "1150px") {
+                font-size: 1rem;
+            }
             &-sername{
                 margin-top: 5px;
                 color: rgba(255, 255, 255, 0.63);

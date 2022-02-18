@@ -4,6 +4,12 @@
     margin-bottom: 50px;
     &-container{
         width: 50%;
+        @media (max-width: "900px") {
+            width: 70%;
+        }
+        @media (max-width: "670px") {
+            width: 80%;
+        }
     }
     h1{
         text-align: center;

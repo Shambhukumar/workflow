@@ -19,7 +19,14 @@ const Header = () => {
       <div className="header-btn">
         <span className="header-btn-login">Log in</span>
         <span className="header-btn-signup">Start free trial</span>
+        <div className="mobile-nav">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
+
+      
     </div>
   );
 };
